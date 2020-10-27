@@ -45,8 +45,9 @@
             }
         </style>
     </head>
+
     <body>
-            <!-- ======= Header ======= -->
+                    <!-- ======= Header ======= -->
         <header id="header" class="fixed-top header-transparent">
             <div class="container d-flex align-items-center">
 
@@ -86,62 +87,139 @@
             </div>
         </header><!-- End Header -->
         
-        
-        <div class="col-lg-8">
+        <!-- Information form -->
+          <div class="col-lg-8">
 
             <div class="form">
 
-              <h4>Fill in your details</h4>
+              
+              <!-- First Name and Last Name -->
               <div class="form-row">
-                <div class="form-group col-md-6">
-                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" data-rule="minlen:1" data-msg="Please enter at least 4 chars" /> 
-                    <div class="validate"></div>
+                <div class="form-group col-md-4">
+                  <label for="first name">Mr./Ms.</label>
+                  <input type="text" name="fname" class="form-control" id="fname"/> 
+                  <div class="validate"></div>
                 </div>
-                <div class="form-group col-md-6">
-                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> 
+                <div class="form-group col-md-4">
+                    <label for="first name">First Name</label>
+                    <input type="text" name="fname" class="form-control" id="fname"/> 
                     <div class="validate"></div>
+                </div><!-- First Name -->
+                <div class="form-group col-md-4">
+                  <label for="last name">Last Name</label>
+                    <input type="text" name="lname" class="form-control" id="lname"/> 
+                    <div class="validate"></div>
+                </div><!--Last Name -->
+              </div>
+
+              <!-- Age,Gender and DOB -->
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="last name">Age</label>
+                  <input type="text" name="age" class="form-control" id="age" />
+                  <div class="validate"></div>
+                </div> <br><br><!--Age -->
+                
+                <div class="form-group col-md-4">
+                  <label for="gender">Gender</label>
+                  <select id="gender" class="form-control">
+                    <option selected>Select an option</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                  </select>
+                </div><!--Gender -->
+                <div class="form-group col-md-4">
+                  <label for="date of birth">Date of Birth</label>
+                    <input type="date" name="dob" class="form-control" id="dob"/> 
+                    <div class="validate"></div>
+                </div><!--DOB -->
+              </div><!-- Age,Gender and DOB -->
+
+              <!--Blood Group -->
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="Blood Group">Blood Group</label>
+                  <select id="blood group" class="form-control">
+                    <option selected>Select an option</option>
+                    <option>O+ve</option>
+                    <option>A+ve</option>
+                    <option>B+ve</option>
+                    <option>O-ve</option>
+                    <option>A-ve</option>
+                    <option>B-ve</option>
+                    <option>AB+ve</option>
+                    <option>AB-ve</option>
+                  </select>
+                </div>
+              </div><!--Blood Group -->
+              <br>
+
+              <h4>Contact Details</h4>
+              
+              <!--Email,phoneno,tele-phone no -->
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email"  data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                </div><!--Email -->
+                <div class="form-group col-md-4">
+                  <label for="phoneno">Phone Number</label>
+                  <input type="text" class="form-control" name="phoneno" id="phoneno"/>
+                  <div class="validate"></div>
+                </div><!--phoneno-->
+                <div class="form-group col-md-4">
+                  <label for="teleno">Tele-phone Number</label>
+                  <input type="text" class="form-control" name="teleno" id="teleno"/>
+                  <div class="validate"></div>
+                </div> <!--tele-phone no -->
+              </div><!--Email,phoneno,tele-phone no -->
+              <br>
+
+              <h5>Address</h5>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="house number">House No./Building name</label>
+                  <input type="text" class="form-control" name="houseno" id="houseno"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="area">Colony/Street Name/Area</label>
+                  <input type="text" class="form-control" name="area" id="area"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control" name="city" id="city"/>
+                  <div class="validate"></div>
                 </div>
               </div>
+
               <div class="form-row">
-                <div class="form-group col-md-8">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="form-group col-md-4">
+                  <label for="State">State</label>
+                  <input type="text" class="form-control" name="state" id="state"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="Country">Country</label>
+                  <input type="text" class="form-control" name="country" id="country"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="pincode">Pin-code</label>
+                  <input type="text" class="form-control" name="pincode" id="pincode"/>
                   <div class="validate"></div>
                 </div>
               </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-
-                <!-- <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div> -->
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
-
+               
+              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+            </form>
             </div>
 
           </div>
         
-
-
-
-
-
-
-
-
-
-    </body>
+  </body>
 </html>
