@@ -1,9 +1,3 @@
-/**
-* Template Name: Rapid - v2.2.0
-* Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -654,7 +648,7 @@ section {
   margin-bottom: 0;
   text-align: left;
 }
-
+/* 
 /* Why Us Section
 --------------------------------*/
 #why-us {
@@ -888,7 +882,7 @@ section {
 
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
+} */
 
 /* Testimonials Section
 --------------------------------*/
@@ -973,11 +967,13 @@ section {
 /* Team Section
 --------------------------------*/
 #team {
-  padding: 60px 0;
+  padding: 60px 50px;
+  
 }
 
 #team .member {
-  text-align: center;
+  margin-left: 70px;
+  text-align: end;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -985,8 +981,8 @@ section {
 
 #team .member .member-info {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1019,7 +1015,7 @@ section {
 
 #team .member span {
   font-style: italic;
-  display: block;
+  display: inline-flexbox;
   font-size: 13px;
   color: #fff;
 }
