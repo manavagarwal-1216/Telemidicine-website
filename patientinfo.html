@@ -27,7 +27,7 @@
         <link href="assets/vendor/aos/aos.css" rel="stylesheet">
       
         <!-- Template Main CSS File -->
-        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/patinfo.css" rel="stylesheet">
       
         <!-- =======================================================
         * Template Name: Rapid - v2.2.0
@@ -37,82 +37,86 @@
         ======================================================== -->
         
         <!-- CSS PART OF PATIENT INFORMATION  -->
-        <style>
-            .form{
-                position: relative;
-                margin-left: 200px;
-                margin-top: 150px;
-            }
-        </style>
+       
     </head>
 
     <body>
-                    <!-- ======= Header ======= -->
+                  <!-- ======= Header ======= -->
         <header id="header" class="fixed-top header-transparent">
-            <div class="container d-flex align-items-center">
+          <div class="container d-flex align-items-center">
 
-                <h1 class="logo mr-auto"><a href="index.html">Doctor & Me<h6 style="color: #e98e06;">health care anywhere</h6></a></h1>
+            <h1 class="logo mr-auto"><a href="index.html">Doctor & Me<h6 style="color: #db880a; text-align: center ;font-size: 15px;">health care anywhere</h6></a></h1>
+            
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav class="main-nav d-none d-lg-block">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
                 
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                <li><a href="#services">Actions</a></li>
+                <li class="drop-down"><a href="#">Departments</a>
+                  <ul>
+                    <li><a href="#">General</a></li>
+                    <li class="drop-down"><a href="#">Skin Problems</a>
+                      <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Gynaecologist</a></li>
+                    <li><a href="#">orthopedic</a></li>
+                    <li><a href="#">pediatrician</a></li>
+                    <li><a href="#">Cardiologist</a></li>
+                  </ul>
+                </li>
+                <li><a href="login.html" style="color: red;">Logout</a></li>
+                
+                
+                <li class="drop-down"><a href="#">Profile</a>
+                <ul>
+                  <li><a href="patientinfo.html">Personal Information</a></li>
+                  <li><a href="#">Switch to Doctor Profile</a></li>
+                  <li><a href="#">See prescriptions &<br>medical records</br> </a></li>
+                  <li><a href="#">Settings</a></li>
+              </ul>
+              </li>
+            </nav><!-- .main-nav-->
 
-                <nav class="main-nav d-none d-lg-block">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Actions</a></li>
-                        <li class="drop-down"><a href="">Specializations</a>
-                            <ul>
-                                <li><a href="#">General</a></li>
-                                <li class="drop-down"><a href="#">cardilogist</a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">orthopedic</a></li>
-                                <li><a href="#">pediatrician</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#portfolio">Login</a></li>
-                        <li><a href="#team">Register</a></li>
-                        
-                        <li><a href="#footer">Profile Settings</a></li>
-                    </ul>
-                </nav><!-- .main-nav-->
-            </div>
+          </div>
         </header><!-- End Header -->
+
+
+
         
-        <!-- Information form -->
-          <div class="col-lg-8">
+      <!-- Information form -->
+    
+      <div class="col-lg-20">
 
-            <div class="form">
+        <div class="form1">
 
-              
-              <!-- First Name and Last Name -->
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="first name">Mr./Ms.</label>
-                  <input type="text" name="fname" class="form-control" id="fname"/> 
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="first name">First Name</label>
-                    <input type="text" name="fname" class="form-control" id="fname"/> 
-                    <div class="validate"></div>
-                </div><!-- First Name -->
-                <div class="form-group col-md-4">
-                  <label for="last name">Last Name</label>
-                    <input type="text" name="lname" class="form-control" id="lname"/> 
-                    <div class="validate"></div>
-                </div><!--Last Name -->
-              </div>
+           <!-- First Name and Last Name -->
+                  
+          <div class="form-row">
+                    
+            <div class="form-group col-md-4">
+              <label for="first name" class="firstname">First Name</label>
+              <input type="text" name="fname" class="form-control"  id="fname"/> 
+              <div class="validate"></div>
+            </div><!-- First Name -->
 
-              <!-- Age,Gender and DOB -->
+            <div class="form-group col-md-4">
+              <label for="last name">Last Name</label>
+              <input type="text" name="lname" class="form-control" id="lname"/> 
+              <div class="validate"></div>
+            </div><!--Last Name -->
+                
+          </div>
+
+              <!-- Age,Gender  -->
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="last name">Age</label>
@@ -129,34 +133,47 @@
                     <option>Others</option>
                   </select>
                 </div><!--Gender -->
-                <div class="form-group col-md-4">
-                  <label for="date of birth">Date of Birth</label>
-                    <input type="date" name="dob" class="form-control" id="dob"/> 
-                    <div class="validate"></div>
-                </div><!--DOB -->
-              </div><!-- Age,Gender and DOB -->
+                
+              </div><!-- Age,Gender -->
+        </div>
+              <div class="col-lg-20">
 
-              <!--Blood Group -->
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="Blood Group">Blood Group</label>
-                  <select id="blood group" class="form-control">
-                    <option selected>Select an option</option>
-                    <option>O+ve</option>
-                    <option>A+ve</option>
-                    <option>B+ve</option>
-                    <option>O-ve</option>
-                    <option>A-ve</option>
-                    <option>B-ve</option>
-                    <option>AB+ve</option>
-                    <option>AB-ve</option>
-                  </select>
-                </div>
-              </div><!--Blood Group -->
+                <div class="form2">
+
+                      <!--Blood Group and DOB-->
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="date of birth">Date of Birth</label>
+                            <input type="date" name="dob" class="form-control" id="dob"/> 
+                            <div class="validate"></div>
+                        </div><!--DOB -->
+                        <div class="form-group col-md-4">
+                          <label for="Blood Group">Blood Group</label>
+                          <select id="blood group" class="form-control">
+                            <option selected>Select an option</option>
+                            <option>O+ve</option>
+                            <option>A+ve</option>
+                            <option>B+ve</option>
+                            <option>O-ve</option>
+                            <option>A-ve</option>
+                            <option>B-ve</option>
+                            <option>AB+ve</option>
+                            <option>AB-ve</option>
+                          </select>
+                        </div>
+                     </div><!--Blood Group and DOB-->
+                     </div>
+
               <br>
+          </div>
+        </div>
+          
+        <div class="col-lg-10">
 
-              <h4>Contact Details</h4>
-              
+            <div class="form3">
+
+              <u><h4>Contact Details</h4></u>
+              <br>
               <!--Email,phoneno,tele-phone no -->
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -177,7 +194,8 @@
               </div><!--Email,phoneno,tele-phone no -->
               <br>
 
-              <h5>Address</h5>
+              <u><h4>Address</h4></u>
+              <br>
 
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -214,8 +232,9 @@
                   <div class="validate"></div>
                 </div>
               </div>
-               
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+               <br>
+              <div ><button class="subbut" type="submit" title="Send Message">Send Message</button></div>
+              <br>
             </form>
             </div>
 
