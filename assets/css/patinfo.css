@@ -2,7 +2,7 @@
 # Header
 --------------------------------------------------------------*/
 #header {
-  background:  cyan;
+  background:  rgb(238, 240, 240);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -267,8 +267,8 @@
    margin-top: 10px;
 }
 .subbut{
-  background-color:#413e66;
-  color:  #e98e06;
+  background-color:#49e93a;
+  color:  #faf9ff;
   margin-left: 450px;
 }
 
@@ -276,5 +276,5 @@
 # Form
 --------------------------------------------------------------*/
 body{
-  background-color:#e98e06;
+  background-color:#c3c8d8;
 }
