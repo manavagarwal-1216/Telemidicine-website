@@ -2,7 +2,7 @@
 # Header
 --------------------------------------------------------------*/
 #header {
-    background:  cyan;
+    background:  rgb(28, 28, 61);
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
@@ -30,7 +30,7 @@
   }
   
   #header .logo a {
-    color: #413e66;
+    color: rgb(212, 212, 233);;
   }
   
   #header .logo img {
@@ -159,7 +159,7 @@
     left: -260px;
     width: 260px;
     padding-top: 18px;
-    background: rgba(40, 38, 70, 0.8);
+    background: rgba(176, 175, 197, 0.8);
     transition: 0.4s;
   }
   
