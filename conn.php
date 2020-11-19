@@ -27,15 +27,20 @@ if($_POST['signup'])
 else{
   echo"data not inserted";
 } 
+
 if($POST['signin'])
 {
   $userName = $_POST['phone'];
-  $userPass = $_POST['pass'];
+  $userPass = $_POST['your_pass'];
 
 
-  $user = $db->$collection->findOne(array('Mobile'=> $userName, 'password'=> $userPass));
-  if($user){
+  $user = $db->$collection->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
+  $user->limit(1);
+  if ($user->count(true) > 0){
+
+ 
     header("Location: index1.html")
+  }
   }
 }
 // $collection->insertOne( [ 'name' =>'Peter', 'email' =>'kavin@abc.com' ] );  
