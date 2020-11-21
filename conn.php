@@ -10,6 +10,9 @@ $db = $con->NOSQL_Project;
 // Creating Document  
 $collection = $db->user;  
 // Insering Record 
+
+
+
 if($_POST['signup'])
 {
   $insert=array(
@@ -28,20 +31,40 @@ else{
   echo"data not inserted";
 } 
 
-if($POST['signin'])
+
+
+
+if($_POST['signin'])
 {
   $userName = $_POST['phone'];
   $userPass = $_POST['your_pass'];
 
 
   $user = $db->$collection->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
-  $user->limit(1);
-  if ($user->count(true) > 0){
+  foreach($user as $userFind) {
+    $storedUsername = $userFind['phone'];
+    $storedPassword = $userFind['your_pass'];
+}
+
+if( $userName == $storedUsername &&  $userPass == $storedPassword){ 
+  
+  
+  header("Location: index1.html"); 
+  
+  
+}else{
+  
+  $wrongflag = 1;
+}
+
+}else{}
+  // $user->limit(1);
+  // if ($user->count(true) > 0){
 
  
-    header("Location: index1.html")
-  }
-  }
+  //   header("Location: index1.html");
+  // }
+  
 }
 // $collection->insertOne( [ 'name' =>'Peter', 'email' =>'kavin@abc.com' ] );  
 // Fetching Record  
