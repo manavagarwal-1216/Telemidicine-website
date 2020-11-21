@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
 <body>
     <br>
     
-<section class="sign-in">
+<div class="sign-in">
   <div class="container">
     <div style=" color: black; font-weight: bold; margin-left: 45px;">
         <a href = "index.html" style="color: black;">GO TO HOME</a>
@@ -28,8 +29,10 @@
           </div>
 
           <div class="signin-form">
-              <h2 class="form-title">Sign up</h2>
-              <form method="POST" class="register-form" id="login-form" action="conn.php">
+              
+            <h2 class="form-title">Sign IN</h2>
+              
+            <form method="POST" class="register-form" id="login-form" action="login_action.php">
                   <div class="form-group">
                       <label for="phone"><i class="zmdi zmdi-phone"></i></label>
                       <input type="tel" name="phone" id="phone" placeholder="Mobile Number"/>
@@ -43,7 +46,7 @@
                       <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                   </div>
                   <div class="form-group form-button">
-                      <input type="" name="signin" id="signin" class="form-submit" value="Log in" onclick="window.location.href='index1.html';" value="Home"/>
+                      <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" onclick="window.location.href='index1.html';" value="Home"/>
                   </div>
               </form>
               <div class="social-login">
