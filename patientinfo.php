@@ -78,8 +78,8 @@
                 
                 <li class="drop-down"><a href="#">Profile</a>
                 <ul>
-                  <li><a href="patientinfo.html">Personal Information</a></li>
-                  <li><a href="appointment.html">Appointment</a></li>
+                  <li><a href="patientinfo.php">Personal Information</a></li>
+                  <li><a href="appointment.php">Appointment</a></li>
                   <li><a href="#">Switch to Doctor Profile</a></li>
                   <li><a href="#">See prescriptions &<br>medical records</br> </a></li>
                   <li><a href="#">Settings</a></li>

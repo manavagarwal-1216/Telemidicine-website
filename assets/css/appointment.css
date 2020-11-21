@@ -252,7 +252,7 @@
   }
   
 /*--------------------------------------------------------------
-# Header
+# form
 --------------------------------------------------------------*/
   .form1{
     margin-top:200px;
@@ -268,13 +268,11 @@
   #symptoms{
     margin-top: 20px;
   }
-  #dob{
-    margin-top: 20px;
-  }
+  
   #time{
     margin-top: 20px;
   }
-  #submit{
+  #book{
     margin-top: 20px;
     margin-left: 80px;
     margin-bottom: 10px;

@@ -82,8 +82,8 @@
 				  
 				  <li class="drop-down"><a href="#">Profile</a>
 				  <ul>
-					<li><a href="patientinfo.html">Personal Information</a></li>
-					<li><a href="appointment.html">Appointment</a></li>
+					<li><a href="patientinfo.php">Personal Information</a></li>
+					<li><a href="appointment.php">Appointment</a></li>
 					<li><a href="#">Switch to Doctor Profile</a></li>
 					<li><a href="#">See prescriptions &<br>medical records</br> </a></li>
 					<li><a href="#">Settings</a></li>
@@ -94,17 +94,17 @@
 			</div>
 		  </header><!-- End Header -->
 
+		  <form method="POST" class="bookappointment" id="bookappointment" action="appointment_action.php"> 
 		  <!-- Location -->
-
 		  <div class="form1" style="margin-left: 100px;">
 				<div id="location" >
 				  <input type="text" placeholder="Enter your location" id="try"/>
 				</div>
-			  <br>
+			  <br><!-- End Location -->
 		  
 				<div class="row">
 					<div class="col-md-3"style="margin-left: 100px;" >
-					<select id="Speciality" class="form-control">
+					<select id="Speciality" name="Speciality" class="form-control">
 						<option selected>Select an Speciality</option>
 						<option>General Physician</option>
 						<option>Orthopedic</option>
@@ -120,10 +120,10 @@
 						<option>Homeopathy</option>
 						<option>Neuro Surgeon</option>
 					</select>
-					<textarea id="symptoms"  class="form-control" placeholder="What health issues are you facing" ></textarea>
-					<input type="date" name="dob" class="form-control" id="dob"/>
-					<input type="time" id="time" class="form-control" placeholder="Please enter the time-slot">
-					<button type="submit" id="submit" >Book <br> Appointment</button>
+					<textarea id="symptoms" name="symptoms" class="form-control" placeholder="What health issues are you facing" ></textarea>
+					<input type="date" name="date" id="date" class="form-control" id="dob" style= "margin-top:20px"/>
+					<input type="time" id="time" name="time" class="form-control" placeholder="Please enter the time-slot">
+					<input type="submit" id="book" name="book" value="Book Appointment"  style="margin-top:20px"/>
 				</div>
 				<div style="margin-left: 400px;">
 					<img src="assets/img/appointment.PNG" height="350px" width="350px">			
@@ -135,6 +135,6 @@
 		</form1>
 		  </div>
 		  <br>
-		  
+		 <form> 
 	</body>
 </html>
