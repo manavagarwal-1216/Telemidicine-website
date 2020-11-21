@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-$collect=$db->user;
+
 
 require_once('conn.php');
 
+$collection=$db->user;
 // if(isset($_SESSION['user'])){
 //     header('Location: index1.php');
 // }
