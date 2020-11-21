@@ -6,16 +6,27 @@ require_once('conn.php');
 // if(isset($_SESSION['user'])){
 //     header('Location: index1.php');
 // }
-if(isset($_POST['phone']) && isset($_POST['your_pass'])){
-    $username = $_POST['phone'];
-    $password = hash('sha256', $_POST['your_pass']);
-    $result = $db->collection->findOne(array('Mobile'=>$username, 'password'=>$password));
-    if(!result)
-    {
-        echo "fgdtfyhf";
-    } else{
-        $_SESSION['user']=$result->_id;
-        echo "matched";
-        header('Location: index1.html');
+if($_POST['signin'])
+{
+  $userName = $_POST['phone'];
+  $userPass = $_POST['your_pass'];
+
+  $find=array('Mobile'=> $userName , 'password'=> $userPass);
+
+  $user = $collection->findOne($find);
+  var_dump($user);
+  //$user->limit(1);
+  if($user){
+    $success = "You are successully loggedIn";
+    header('Location: index1.html');
     }
-}
+    else {
+    die("Mongo DB not installed");
+    }
+  //if ($user->count(true) > 0){
+
+ 
+    //header("Location: index1.html")
+  //}
+  }
+
