@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$collect=$db->user;
+
 require_once('conn.php');
 
 // if(isset($_SESSION['user'])){

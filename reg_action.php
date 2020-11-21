@@ -1,6 +1,8 @@
 <?php
 require_once('conn.php');
 
+$collection=$db->user;
+
 if($_POST['signup'])
 {
   $insert=array(

@@ -8,50 +8,8 @@ $con = new MongoDB\Client("mongodb://localhost:27017");
 // Creating Database  
 $db = $con->NOSQL_Project;  
 // Creating Document  
-$collection = $db->user;  
+  
 // Insering Record 
-<<<<<<< HEAD
-if($_POST['signup'])
-{
-  $insert=array(
-    'name'=> $_POST['name'],
-    'email'=> $_POST['email'],
-    'Mobile'=>$_POST['phone'],
-    'password'=>$_POST['pass']
-
-  );
-  if($collection->insertOne($insert))
-  {
-    header("Location:login.html");
-  }
-}
-else{
-  echo"data not inserted";
-} 
-
-if($POST['signin'])
-{
-  $userName = $_POST['phone'];
-  $userPass = $_POST['your_pass'];
-
-
-  $user = $db->user->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
-  $user->limit(1);
-  if ($user->count(true) > 0){
-
- 
-    header("Location: index1.html")
-  }
-  }
-}
-
-if($POST['submit'])
-{
-  $insert=array(
-    'first_name' =>
-  )
-}
-=======
 
 
 
@@ -108,7 +66,6 @@ if($POST['submit'])
   // }
   
 //}
->>>>>>> b9e15d3e15f70f360c85854c0f165233e8168b6d
 // $collection->insertOne( [ 'name' =>'Peter', 'email' =>'kavin@abc.com' ] );  
 // Fetching Record  
 //$record = $collection->find( [ 'name' =>'kavin'] );  
