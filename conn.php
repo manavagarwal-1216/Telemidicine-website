@@ -8,6 +8,7 @@ $con = new MongoDB\Client("mongodb://localhost:27017");
 // Creating Database  
 $db = $con->NOSQL_Project;  
 // Creating Document  
+<<<<<<< HEAD
   
 // Insering Record 
 
@@ -73,3 +74,7 @@ $db = $con->NOSQL_Project;
 // echo $employe['name'], ': ', $employe['email']."<br>";  
 // }  
 ?>
+=======
+$collection = $db->user;  
+
+>>>>>>> db2859ac0ebc83b4f27e9cb7a0fe1a26a6a5dd04
