@@ -94,9 +94,9 @@
 
         
       <!-- Information form -->
-    
+      <form method="POST" class="patientinfo" id="patientinfo" action="patientinfo.php">
       <div class="col-lg-20">
-
+        
         <div class="form1">
 
            <!-- First Name and Last Name -->
@@ -104,7 +104,7 @@
           <div class="form-row">
                     
             <div class="form-group col-md-4">
-              <label for="first name" class="firstname">First Name</label>
+              <label for="fname" class="firstname">First Name</label>
               <input type="text" name="fname" class="form-control"  id="fname"/> 
               <div class="validate"></div>
             </div><!-- First Name -->
@@ -127,7 +127,7 @@
                 
                 <div class="form-group col-md-4">
                   <label for="gender">Gender</label>
-                  <select id="gender" class="form-control">
+                  <select id="gender" name="gender" class="form-control">
                     <option selected>Select an option</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -150,7 +150,7 @@
                         </div><!--DOB -->
                         <div class="form-group col-md-4">
                           <label for="Blood Group">Blood Group</label>
-                          <select id="blood group" class="form-control">
+                          <select id="blood_group" name="blood_group" class="form-control">
                             <option selected>Select an option</option>
                             <option>O+ve</option>
                             <option>A+ve</option>
@@ -234,12 +234,12 @@
                 </div>
               </div>
                <br>
-              <div ><button class="subbut" type="submit" value="submit" title="Send Message">Submit</button></div>
+              <div ><input type="submit" class="subbut" type="submit" name="submit" id="submit" value="Submit"/></div>
               <br>
-            </form>
+            
             </div>
 
           </div>
-        
+        </form>
   </body>
 </html>

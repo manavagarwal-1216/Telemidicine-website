@@ -34,7 +34,7 @@ if($POST['signin'])
   $userPass = $_POST['your_pass'];
 
 
-  $user = $db->$collection->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
+  $user = $db->user->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
   $user->limit(1);
   if ($user->count(true) > 0){
 
@@ -42,6 +42,13 @@ if($POST['signin'])
     header("Location: index1.html")
   }
   }
+}
+
+if($POST['submit'])
+{
+  $insert=array(
+    'first_name' =>
+  )
 }
 // $collection->insertOne( [ 'name' =>'Peter', 'email' =>'kavin@abc.com' ] );  
 // Fetching Record  
