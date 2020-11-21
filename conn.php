@@ -13,51 +13,51 @@ $collection = $db->user;
 
 
 
-if($_POST['signup'])
-{
-  $insert=array(
-    'name'=> $_POST['name'],
-    'email'=> $_POST['email'],
-    'Mobile'=>$_POST['phone'],
-    'password'=>$_POST['pass']
+// if($_POST['signup'])
+// {
+//   $insert=array(
+//     'name'=> $_POST['name'],
+//     'email'=> $_POST['email'],
+//     'Mobile'=>$_POST['phone'],
+//     'password'=>$_POST['pass']
 
-  );
-  if($collection->insertOne($insert))
-  {
-    header("Location:login.html");
-  }
-}
-else{
-  echo"data not inserted";
-} 
-
-
+//   );
+//   if($collection->insertOne($insert))
+//   {
+//     header("Location:login.html");
+//   }
+// }
+// else{
+//   echo"data not inserted";
+// } 
 
 
-if($_POST['signin'])
-{
-  $userName = $_POST['phone'];
-  $userPass = $_POST['your_pass'];
 
 
-  $user = $db->$collection->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
-  foreach($user as $userFind) {
-    $storedUsername = $userFind['phone'];
-    $storedPassword = $userFind['your_pass'];
-}
+// if($_POST['signin'])
+// {
+//   $userName = $_POST['phone'];
+//   $userPass = $_POST['your_pass'];
 
-if( $userName == $storedUsername &&  $userPass == $storedPassword){ 
+
+//   $user = $db->$collection->findOne(array('Mobile'=> $userName , 'password'=> $userPass));
+//   foreach($user as $userFind) {
+//     $storedUsername = $userFind['phone'];
+//     $storedPassword = $userFind['your_pass'];
+// }
+
+// if( $userName == $storedUsername &&  $userPass == $storedPassword){ 
   
   
-  header("Location: index1.html"); 
+//   header("Location: index1.html"); 
   
   
-}else{
+// }else{
   
-  $wrongflag = 1;
-}
+//   $wrongflag = 1;
+// }
 
-}else{}
+// }else{}
   // $user->limit(1);
   // if ($user->count(true) > 0){
 
@@ -65,7 +65,7 @@ if( $userName == $storedUsername &&  $userPass == $storedPassword){
   //   header("Location: index1.html");
   // }
   
-}
+//}
 // $collection->insertOne( [ 'name' =>'Peter', 'email' =>'kavin@abc.com' ] );  
 // Fetching Record  
 //$record = $collection->find( [ 'name' =>'kavin'] );  
