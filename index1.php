@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,13 +71,14 @@
               <li><a href="#">Cardiologist</a></li>
             </ul>
           </li>
-          <li><a href="login.php" style="color: red;">Logout</a></li>
+          <li><a href="login.php" style="color: red;"><?php session_destroy();?>Logout</a></li>
           
           
-          <li class="drop-down"><a href="#">Profile</a>
+          <li class="drop-down"><a href="#"><?php echo $_SESSION["username"];?></a>
           <ul>
+           
             <li><a href="patientinfo.php">Patient Information</a></li>
-            <li><a href="appointment.php">Appointment</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
             <li><a href="#">Switch to Doctor Profile</a></li>
             <li><a href="#">See prescriptions &<br>medical records</br> </a></li>
             <li><a href="#">Settings</a></li>

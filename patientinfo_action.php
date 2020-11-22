@@ -25,6 +25,7 @@ if($_POST['submit'])
     );
     if($collect->insertOne($insert))
     {
+        
         header("Location:patientinfo.php");
     }
 }

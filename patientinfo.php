@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -76,10 +80,10 @@
                 <li><a href="login.html" style="color: red;">Logout</a></li>
                 
                 
-                <li class="drop-down"><a href="#">Profile</a>
+                <li class="drop-down"><a href="#"><?php echo $_SESSION["username"]?></a>
                 <ul>
-                  <li><a href="patientinfo.php">Personal Information</a></li>
-                  <li><a href="appointment.php">Appointment</a></li>
+                  <li><a href="patientinfo.html">Personal Information</a></li>
+                  <li><a href="appointment.html">Appointment</a></li>
                   <li><a href="#">Switch to Doctor Profile</a></li>
                   <li><a href="#">See prescriptions &<br>medical records</br> </a></li>
                   <li><a href="#">Settings</a></li>
@@ -179,12 +183,12 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control" name="email" id="email"  data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" name="email" id="email"  data-rule="email" data-msg="Please enter a valid email" readonly value="<?php echo $_SESSION['email']?>"/>
                     <div class="validate"></div>
                 </div><!--Email -->
                 <div class="form-group col-md-4">
-                  <label for="phoneno">Phone Number</label>
-                  <input type="text" class="form-control" name="phoneno" id="phoneno"/>
+                  <label for="phoneno" >Phone Number</label>
+                  <input readonly type="text" class="form-control" name="phoneno" id="phoneno" value="<?php echo $_SESSION['userphone'];?>"/>
                   <div class="validate"></div>
                 </div><!--phoneno-->
                 <div class="form-group col-md-4">

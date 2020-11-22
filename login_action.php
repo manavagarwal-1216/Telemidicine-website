@@ -17,14 +17,18 @@ if($_POST['signin'])
   $find=array('Mobile'=> $userName , 'password'=> $userPass);
 
   $user = $collection->findOne($find);
-  var_dump($user);
+  //var_dump($user);
   //$user->limit(1);
   if($user){
-    $success = "You are successully loggedIn";
-    header('Location: index1.html');
+    $_SESSION["username"]=$user["name"];
+    $_SESSION["userphone"]=$userName;
+    $_SESSION["email"]=$user["email"];
+    //echo  $_SESSION["userphone"];
+    header('Location: index1.php');
     }
     else {
-    die("Mongo DB not installed");
+      //echo  $_SESSION["username"];
+    echo "Wrong credential,<a href='login.php'>Login again?</a> ";
     }
   //if ($user->count(true) > 0){
 
